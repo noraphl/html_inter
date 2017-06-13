@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Intermedio</title>
+</head>
+
+<body>
+
+<div id = "divisor">
+<div id="subtitle">
+  <h5>Subtítulo</h5>
+  </div>
+  <div id="parrafos"><p>Este es el primer párrafo de contenido.</p>
+  <div id="parrafo2"><p>Y este es el segundo párrafo de contenido</p></div>
+  </div>
+</div>
+
+<style>
+  #divisor {
+    color: #1f8dd3;
+    border: 2px yellow solid;
+    margin: 5px;
+    padding: 10px;
+    font-size: xx-large
+  }
+  #subtitle {
+  	color: red;
+  }
+  #parrafos {
+  font-style: italic;
+  }
+  #parrafo2 {
+  text-decoration: line-through
+  }
+</style> 
+
+<form id="datos_facturacion">
+  <fieldset>
+    <legend>Datos de facturación</legend>
+    <label for="nom_cmpleto">
+      Nombre completo:
+      <input type="text" name="nom_cmpleto">
+    </label><br>
+    <label for="rfc">
+      RFC:
+      <input type="text" name="rfc">
+    </label><br>
+    <label for="direccion">
+    	Dirección: 
+    	<input type="text" name="direccion">
+    </label><br>
+    <label for="email">
+      Email:
+      <input type="email" name="email">
+    </label><br>
+    <label for="telefono">
+    	Telefóno (10 dígitos): 
+    	<input type="number" name="telefono" pattern="[/0321456987/]" maxlength="10">
+    </label><br>
+    <label for="descripcion">
+      Descripción de la compra:<br>
+      <textarea form="datos_facturacion" rows="4" cols="50"></textarea>
+    </label><br>
+    <label for="pago">
+    	Forma de pago:<br>
+    	<input type="radio" name="pago" value="efectivo"> Efectivo<br>
+    	<input type="radio" name="pago" value="cheque"> Cheque<br>
+    	<input type="radio" name="pago" value="credito"> Tarjeta de crédito<br>
+    	<input type="radio" name="pago" value="debito"> Terjeta de débito<br>
+    </label>
+    <label for="monto">
+    	Monto (total compra):
+    	<input type="number" name="monto"><span>MXN</span>
+    </label>
+  </fieldset>
+</form>
+
+</body>
+</html>
